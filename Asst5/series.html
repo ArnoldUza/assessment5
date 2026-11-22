@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humans of New York</title>
+
+    <!--Meta description for SEO-->
+    <meta name="Description"
+        content="Explore the work Humans of New York">
+
+    <!--Open Graph for Social Sharing-->    
+    <meta property="og:title" content="Humans of New York">
+    <meta property="og:Description" content="Humans of New York is an...">
+
+    <!--Author and Copyright-->
+    <meta name="author" content="Arnold I Uzabakiriho">
+    <meta name="Copyright" content="Arnold I Uzabakiriho, Assessment 3, 2026">
+
+    <link rel="Stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+      <!--Navigation-->  
+      <nav>
+        <div class="logo">
+          <a href="index.html" target="_self"><img src="assets/logo.png" alt="logo of the Humans of New York project" width="100px" height="50px"></a>
+        </div>
+
+        <div class="menu1">
+          <button class="close-menu">&times;</button>
+          <a href="index.html" target="_self">STORIES</a>
+          <a href="series.html" target="_self">SERIES</a>
+          <a href="about.html" target="_self">ABOUT</a>
+        </div>
+
+        <div class="hamburger-menu">
+          <button>
+              <span class="fa-solid fa-bars"></span>
+          </button>
+        </div>
+      </nav>
+
+     <!--Main Content-->
+        <main>
+            <article class="text-page">
+                <h2>Series</h2>
+                <p>
+                    Taken together, the portraits and captions of Humans of New York became the subject of a vibrant blog.
+                    Each portrait on the home page is a small story about a stranger on the streets of New York City.
+                </p>
+                <p>
+                    Start with <a href="storie1.html">Ms. America pageant</a>, or go back to
+                    <a href="index.html">all the stories</a>.
+                </p>
+            </article>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+                <a href="#"><i class="fa-brands fa-tumblr"></i></a>
+            </div>
+            <div class="credits">
+                <em>
+                    © Arnold I Uzabakiriho, CART 211, FALL 2026, assessment 5, credits: humansofnyarchive.com
+                </em>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('.menu1');
+
+            // Open the menu
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            // Close the menu
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+        });
+    </script>
+</body>
+
+</html>
